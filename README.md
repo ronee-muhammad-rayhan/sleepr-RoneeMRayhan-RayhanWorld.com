@@ -71,3 +71,34 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+```bash
+pnpm i -r    
+docker compose up --build   
+```
+
+```Dockerfile
+RUN npm install -g pnpm
+
+RUN pnpm install
+
+COPY apps/payments apps/payments
+COPY libs libs
+
+RUN cd apps/payments && pnpm install
+
+RUN pnpm run build payments
+
+instead of
+
+RUN npm install -g pnpm
+
+COPY apps/payments apps/payments
+COPY libs libs
+
+RUN pnpm install -r
+
+RUN pnpm run build payments
+
+at auth payments and notifications app/services
+```
