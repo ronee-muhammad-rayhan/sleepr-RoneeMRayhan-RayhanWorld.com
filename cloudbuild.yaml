@@ -60,3 +60,7 @@ steps:
 # options:
 #   serviceAccount: '599341483252-compute@developer.gserviceaccount.com'
 # logging: NONE
+logsBucket: 'gs://sleepr-logs-bucket'
+serviceAccount: '599341483252@cloudbuild.gserviceaccount.com'
+options:
+  logging: GCS_ONLY
