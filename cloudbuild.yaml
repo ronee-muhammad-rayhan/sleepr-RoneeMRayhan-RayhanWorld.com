@@ -57,6 +57,6 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'us-east4-docker.pkg.dev/marine-storm-342219/payments/production']
 
-  options:
-    serviceAccount: '599341483252-compute@developer.gserviceaccount.com'
-  logging: NONE
+options:
+  serviceAccount: '599341483252-compute@developer.gserviceaccount.com'
+logging: NONE
