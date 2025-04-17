@@ -59,4 +59,4 @@ steps:
 
 # options:
 #   serviceAccount: '599341483252-compute@developer.gserviceaccount.com'
-logging: NONE
+# logging: NONE
